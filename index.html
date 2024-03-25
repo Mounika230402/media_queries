@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery Using Media Queries</title>
+    <style>
+        .tablec,td,tr{
+            border-collapse: collapse;
+        }
+        img{
+            height:100%;
+            width:100%;
+        }
+        @media screen and (max-width:320px){
+            /* img{
+                height:100%;
+                width:100%;
+            } */
+            .table2,.table3,.table4{
+                display:none;
+            }
+        }
+        @media screen and (min-width:321px) and (max-width:420px){
+            /* img{
+                height:200px;
+                width:200px;
+            } */
+            .table1,.table3,.table4{
+                display:none;
+            }
+        }
+        @media screen and (min-width:421px) and (max-width:550px){
+            /* img{
+                height:200px;
+                width:200px;
+            } */
+            .table1,.table2,.table4{
+                display:none;
+            }
+        }
+        @media screen and (min-width:551px){
+            /* img{
+                height:200px;
+                width:200px;
+            } */
+            .table2,.table3,.table1{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="tablec table1">
+            <tr>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+        </table>
+        <table class="tablec table2">
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+        </table>
+        <table class="tablec table3">
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+        </table>
+        <table class="tablec table4">
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+            <tr>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+                <td><img src="./nature.jpg"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
